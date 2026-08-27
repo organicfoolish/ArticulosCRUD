@@ -1,0 +1,6 @@
+comandos:
+dotnet new gitignore
+git status       //no deben de salir las carpetas de .vs 
+git push origin main/master
+
+
