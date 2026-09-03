@@ -24,7 +24,15 @@ namespace ArticulosCRUD
         public void MostrarBuscar()
         {
             Console.Clear();
-            Console.WriteLine("Opcion Agregar Seleccionada");
+            Console.WriteLine("Buscar Producto por ID");
+            Console.WriteLine("======================");
+            id = PedirValorEntero("ID");
+            Producto resultado = Manejador.BuscarProductoPorID(id);
+            if(resultado != null)
+            {
+                Console.WriteLine($"ID: {resultado.id}, Nombre: {resultado.Nombre},Precio: {resultado.Precio}, Cantidad: {resultado.Cantidad}");
+            } 
+            else
             Console.ReadLine();
         }
         
@@ -96,3 +104,4 @@ namespace ArticulosCRUD
         menu.MostrarMenu();
     }
 }
+
