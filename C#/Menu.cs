@@ -54,9 +54,12 @@ namespace ArticulosCRUD
                         MostrarBuscar();
                         break;
                     case "4":
-                        MostrarModificar();
+                        MostrarBuscarNombre();
                         break;
                     case "5":
+                        MostrarEliminar();
+                        break;
+                    case "6":
                         MostrarEliminar();
                         break;
                     default:

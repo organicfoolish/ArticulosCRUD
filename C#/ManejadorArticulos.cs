@@ -36,5 +36,10 @@ namespace ArticulosCRUD
             }
             return null;
         }
+        public List <Producto> BuscarProductosPorNombre(string nombre)
+        {
+            return ListaProductos.Where(p => p.Nombre.Contains(nombre, StringComparison.OrdinalIgnoreCase)).ToList(); //busqueda, es un método abstracto que busca un string y regresa una lista
+                          
+        }
   }
 }

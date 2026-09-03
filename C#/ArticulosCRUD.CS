@@ -6,11 +6,26 @@ namespace ArticulosCRUD
         {
 
         }
+        public void MostrarBuscarNombre()
+        {
+            Console.Clear();
+            Console.WriteLine("Buscar Por Nombre");
+            Console.WriteLine("=================");
+            Console.WriteLine();
+            Console.Write("Nombre: ");
+            string nombre = Console.ReadLine();
+            foreach(Producto item in Manejador.BuscarProductosPorNombre(nombre))
+            {
+                Console.WriteLine(item.ToString());
+            }
+            Console.ReadLine();
+
+        }
 
         public void MostrarAgregar()
         {
             Console.Clear();
-            Console.WriteLine("Opcion Agregar Seleccionada");
+            Console.WriteLine("Agregar Producto");
             Console.ReadLine();
         }
         
