@@ -3,4 +3,7 @@ dotnet new gitignore
 git status       //no deben de salir las carpetas de .vs 
 git push origin main/master
 
+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b
+
+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b
 
