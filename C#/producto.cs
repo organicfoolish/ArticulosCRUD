@@ -21,7 +21,7 @@ namespace ArticulosCRUD
         }
         public override string ToString() // Sobreescribe el método ToString , todas las clasen heredan de object que tiene definido el metodo ToString
         {
-            return $"ID, Nombre: {Nombre}, Precio: {Precio}, Cantidad: {Cantidad}";
+            return $"ID: {id}, Nombre: {Nombre}, Precio: {Precio}, Cantidad: {Cantidad}";
         }
     }
 }
