@@ -1,3 +1,6 @@
+
+//Deprecado, se reemplazó por Menu.cs
++-------------------------------------+
 namespace ArticulosCRUD
 {
     internal class Menu
