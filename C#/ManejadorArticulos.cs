@@ -47,9 +47,9 @@ namespace ArticulosCRUD
             Producto? producto = BuscarProductoPorID(id); //paso por referencia (cuando es así, crea un objeto nuevo) ! 
             if(producto is not null)
             {
-                producto.nombre = nombre;
-                producto.precio = precio;
-                producto.cantidad = cantidad;
+                producto.Nombre = nombre;
+                producto.Precio = precio;
+                producto.Cantidad = cantidad;
             }
         }
         public void EliminarProducto(int id)
